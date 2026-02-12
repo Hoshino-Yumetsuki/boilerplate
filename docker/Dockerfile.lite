@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
-RUN apk add --no-cache chromium nss freetype harfbuzz ca-certificates ttf-freefont font-noto-cjk git
+RUN apk add --no-cache ca-certificates git
 
 RUN git clone --depth 1 https://github.com/koishijs/boilerplate.git /boilerplate && rm -rf /boilerplate/.git
 
